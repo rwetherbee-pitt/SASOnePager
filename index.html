@@ -1,0 +1,279 @@
+<!--Welcome! Read through these code comments for instructions on how to design a personal narrative website where audiences can learn about who you are and where you're going. Along the way, you'll learn everything you need to know to get started working with code.-->
+
+<!--HTML pages start by calling <!DOCTYPE html> and designating a language. In this case, United States English. Search engines, browsers, and screen readers use this information to deliver content specific to user needs.-->
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<!--The <head> element contains additional information for search engines and browsers.--> 
+<!--The <title> tag controls the name on the browser tab and the next line of code adds a favicon image-->    
+  <title>Welcome to Codela</title>
+  <link rel="icon" type="image/jpg" href="favicon.jpg">
+<!--This website follows the Unicode 8-bit character set that standardizes all of the letters from all of the languages in the world--emojis too!-->
+  <meta charset="UTF-8">
+<!--This viewport <meta> tag standard tells browsers how to display the website across different sized screens.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--This <link> (rel)ates to the cascading style sheet or CSS in your project folder. Web designers use CSS to add styling to a website. Using CSS saves time and results in fewer lines of code.-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!--The <body> element organizes all of the code and content that actually appears on a screen. You can change the background color by opening the style.css document in the body tag properties. Choose a color with enough contrast for your audience. Neutral colors work best for the greatest number of viewers.-->
+<body>
+
+<!--Developers refer to this next section as the "hero image." 
+Fill in the blank between <h1>"I am..."</h1> and see what happens.
+To replace this image, simply find and delete the hero.jpg file in the project folder. Then add a new .jpg hero image to the project folder and name it hero.jpg. Select an image at least 1200px in width to avoid pixilation. If an image is larger than 1200px, you will want to resize it speed up load time. Crop image height to ensure desired fit.--> 
+
+<!--The "hero-image" properties are controlled on the style.css document. We know this because the <div> calls the class="hero-image". You can open the style.css file and find the hero-image class to edit its properties. Alternatively you can edit the file height by cropping the image to fit within the hero-image.--> 
+
+<div class="hero-image">
+  <div class="hero-text">
+      <h1>Strength Across Schools</h1>
+      <h2>Integrating Justice, CT, and ELA</h2>
+      <h3> Dr. Cassie Quigley, Rebecca Wetherbee, University of Pittsburgh</h3>
+  </div>
+</div>
+
+<!--Privacy is important factor to consider in online composing. How much do you want others to know about you and what images do you want circulating on the internet? Choose your images and other content carefully and be thoughtful about how your content could impact others. If you are concerned about issues of privacy, you can always use stock images, or get creative in other ways.-->
+
+<!--We'll use this first textblock to do a little writing about home and community. These concepts have different meanings for all of us. It might be useful to imagine you are writing for someone far, far away...because your online audience is everywhere.-->
+<div class="text-block" style="text-align: left">
+<!--"Align text left/right/center using inline style properties. To improve accessibility, always left-align text longer than three lines.-->
+  <h2>What is Strenght Across Schools </h2>
+    <p>Currently (2.0): 
+
+Creating a regional Professional Learning Network of partner districts and teachers to provide ongoing professional development (PD) and developing three classroom-based teacher supports for implementing CT/CS curriculum in ELA classrooms. 
+
+</p>
+</div>
+
+<!--Replace the image in this picture frame. Match code with file name/type. Control image width using inline styling. Adjust image size to 1200-600px depending on its need to scale across a screen. Remove or adjust the frame using the frame class on style.css.-->
+<div>
+  <img class="frame" src="codela.jpg" width="25%" alt="Codela Logo">
+<!--Add alt="text" image descriptions for visually impaired individuals using screen readers. Describe your image as clearly and succinctly as possible. Add captions. They provide another important layer of accessibility.-->
+    <div class="caption"><i>Codela Logo</i></div>
+</div>
+<!-- Go to style.css page to experiment with "frame class" properties like "background/padding/border/margin." You can also experiment with image filters and "border-radius."-->
+
+<!--So, what exactly are you into? Take some time to explain your various passions.-->
+<div class="text-block" style="text-align: left">
+  <h2>Links, Activities and Resources</h2>
+    <p>Below are the links and resources we will be talking about in today's session. Feel free to bookmark this link and return to it at any time. </p>
+</div>
+
+<!--Flexbox uses rows and column classes to create layouts that scale content across devices. The style.css page provides other attributes that will adjust the image depending on the size of screens. Add images to your project folder and make sure the file name/type matches in your code. Resize images to less than 600px in width. This will improve load time accessibility. Don't forget to add alt="text"-->
+
+<!--Add images related to your interests and activities.-->
+<div class="flexbox-container">
+  <div class="row">
+      <div class="column">
+          <p><a href="https://codela-k12.github.io/main/" target="_blank">
+              <img src="pgrid1.jpg" alt="Codela Logo with Clickable Link"></a></p>
+          <div class="caption"><i>Codela Main Page</i></div>
+
+          <p><a href="https://github.com/codela-k12/code-and-technology-narrative/blob/main/README.md" target="_blank">
+              <img src="pgrid2.jpg" alt="describe the image HERE for accessibility purposes"></a></p>
+          <div class="caption"><i>Codela Code and Technology GitHub</i></div>
+          
+      </div>
+      <div class="column">
+          <p><a href="https://rwetherbee-pitt.github.io/wetherbeeCodela/" target="_blank">
+              <img src="pgrid3.jpg" alt="describe the image HERE for accessibility purposes"></a></p>
+          <div class="caption"><i>Example Code and Technology Narrative</i></div>
+         <p><a href="https://docs.google.com/document/d/1LLjR7berxaAdOS6rE-TWd8B5BEBoW2qsAP30Ztky4GA/edit?usp=sharing" target="_blank">
+              <img src="pgrid4.jpg" alt="describe the image HERE for accessibility purposes"></a></p>
+          <div class="caption"><i>Step by Step Guide: Technology Narrative</i></div>
+      </div>
+  </div>
+  </div>
+  
+<!--We all seek entertainment in our leisure time. What entertains you? How does it connect or distract you from other parts of your life? What is good and bad about this consumption.-->
+<div class="text-block" style="text-align: left">
+  <h2>ELA Computational Thinking Activities</h2>
+    <p>Below are examples of ELA resources that integrate CT practices</p>
+</div>
+
+<!--Flexbox uses rows and column classes to create layouts that scale content across devices. The style.css page provides other attributes that will adjust the image depending on the size of screens. Add images to your project folder and make sure the file name/type matches in your code. Resize images to less than 600px in width. This will improve load time accessibility. Don't forget to add alt="text"-->
+
+<!--Add images related to your interests and activities.-->
+
+  <div class="flexbox-container">
+  <div class="row">
+      <div class="column">
+          <p><a href="https://codela-k12.github.io/main/">
+              <img src="pgrid1.jpg" alt="Codela Logo with Clickable Link"></a></p>
+          <div class="caption"><i>Jabberwocky Rhyme and Rhythm</i></div>
+          
+      </div>
+      <div class="column">
+          <p><a href="https://rwetherbee-pitt.github.io/wetherbeeCodela/">
+              <img src="pgrid3.jpg" alt="describe the image HERE for accessibility purposes"></a></p>
+          <div class="caption"><i>Computational Thinking Writing Activity</i></div>
+      </div>
+      <div class="column">
+         <p><a href="https://docs.google.com/document/d/1LLjR7berxaAdOS6rE-TWd8B5BEBoW2qsAP30Ztky4GA/edit?usp=sharing">
+              <img src="pgrid4.jpg" alt="describe the image HERE for accessibility purposes"></a></p>
+          <div class="caption"><i>Drama Script and HTML</i></div>
+      </div>
+  </div>
+  </div>
+
+
+
+<!--Let's talk a little about the future. What kind of job or career would you like to pursue? What is your reasoning for going down this path? How might this job or career connect to the other areas about which we've written, home and community, interests and activities, and entertainment? Why is this job or career important to you or in general?-->
+<div class="text-block" style="text-align: left">
+  <h2>In the Future...</h2>
+    <p>The goal of the research is to develop curriculum and tools for ELA teachers to be able to integrate computational thinking inot their classroom, and create a professional learning network to connect teachers, Pitt researchers and other interested parties with resources. </p>
+</div>
+
+<div class="logo">
+  <img src="codela.jpg" alt="Codela logo" width="25%">
+    <p><b>generated by <a href="https://codela-k12.github.io/main/">Codela</a></b></p>
+    <p><i>code for the English Language Arts classroom</i></p>
+</div>
+    
+</body>
+</html>
+
+
+  <!--Looking to add components? You've come to the right place. Copy and paste Code Snippets and add to the body section. Adjust class CSS properties on style.css.
+
+
+    ***Add Text block***
+
+    (Format textblock using inline styling: text-align: left, center, justify, right. To improve accessibility, always left-align text longer than three lines; Format text: <i>italics</i>; <b>bold</b>; <u>underline</u>; <mark>highlight</mark>; <sup>superscript</sup>; <sub>subscript</sub>; Link Website: <a href="link">LinkName</a>; Line Breaks: <br></br>;
+
+  <div class="text-block" style="text-align: left">
+    <h2>Header</h2>
+       <p>We recommend using our mobile-ready text sizing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+
+
+    ***Add Pull Quote***
+
+    (Format text: Italics: <i>italics</i>; Bold: <b>bold</b>. Change font and font size using CSS)
+
+  <div class="pull-quote" style="text-align: center">
+    <h2>Excepteur sint occaecat cupidatat non proident!</h2>
+  </div>
+
+
+
+    ***Bulleted Points or List***
+
+    (Nest within text-block or style using CSS. Change <ul> to <ol> in HTML to switch from unordered list to ordered list.)
+
+  <div>
+    <ul>
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+    </ul>
+  </div>
+
+
+
+    ***Add Link that Looks Like a Button***
+
+    (Clearly label link action. For more stylings, find button-box class properties on style.css)
+
+  <div class="button-box">
+    <a href="https://codela-k12.github.io/main/" class="button">Go to Codela</a>
+  </div>
+
+
+
+    ***Add CSS Flexbox Container with Placeholder Images***
+
+    (Add or subtract columns. Control column width using CSS.)
+
+  <div class="flexbox-container">
+    <div class="row">
+        <div class="column">
+            <img src="pgrid1.jpg" alt="describe the image HERE for accessibility purposes">
+            <img src="pgrid2.jpg" alt="describe the image HERE for accessibility purposes">
+        </div>
+        <div class="column">
+            <img src="pgrid3.jpg" alt="describe the image HERE for accessibility purposes">
+            <img src="pgrid4.jpg" alt="describe the image HERE for accessibility purposes">
+        </div>
+        <div class="column">
+            <img src="pgrid5.jpg" alt="describe the image HERE for accessibility purposes">
+            <img src="pgrid6.jpg" alt="describe the image HERE for accessibility purposes">
+        </div>
+    </div>
+        <p><i>Add a caption.</i></p>
+  </div>
+
+
+
+    ***Add Image Frame and Filters***
+
+    (Control image width using inline styling. Adjust "frame" class properties using CSS.)
+
+  <img class="frame" src="codela.jpg" width="50%" alt="describe the image HERE for accessibility purposes">
+    <div class="caption">
+      <p><i>Add a caption</i></p>
+    </div>
+  
+
+
+
+    ***Add Polaroid***
+
+    (Control image width using CSS.)
+
+  <div class="polaroid">
+    <img src="polaroid.jpg" alt="describe the image HERE for accessibility purposes">
+      <div class="polaroid-caption">
+        <p><i>Add a caption</i></p>
+      </div>
+  </div>
+
+
+
+      ***Add Image Container with Text Box***
+
+      (Control Image Container properties using CSS.)
+
+  <div class="image-container">
+    <img src="image.jpg" alt="describe image here">
+      <div class="image-container-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+  </div>
+
+
+
+    ***Add Parallax Window***
+
+      (Adjust properties using parallax class on style.css)
+
+  <div class="parallax"></div>
+    <div class="caption">
+      <p><i>Add a caption.</i></p>
+  </div>
+
+
+
+    ***Embed YouTube Video***
+
+  <div class="video">
+    <div class="video-container">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/KVUBbM7pIYw?si=PIkNRIwkV2UqE1Td" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+       <p><i>Add a caption.</i></p>
+  </div>
+
+
+    ***Add Copyright Footer***
+
+  <div class="footer">
+    <p><i>Copyright Your Name, Year.</i></p>
+  </div>
+
+
+
+    ***Need something that's not here? Go to https://www.w3schools.com to find all kinds of resources to facilitate your code learning.***
+-->
