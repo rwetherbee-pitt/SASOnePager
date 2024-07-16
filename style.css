@@ -366,3 +366,9 @@ Add a Copyright */
     font-size: inherit;
     text-align: center;    
   }
+
+.highlight {
+  background-color:black;
+  margin:0 -8px; padding:0 8px;
+  color: white;
+}
